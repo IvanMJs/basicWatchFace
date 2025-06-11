@@ -194,7 +194,7 @@ c_Users_ivanm_garmin_dev_basicWatchFace_bin_gen_006_B3907_00_source_Rez_mcgen_17
             %tmp.110 = const :locX;
             symbol [ locX %tmp.110 23 121 125 const ];
             %tmp.111 = 280;
-            %tmp.112 = 47;
+            %tmp.112 = 50;
             %tmp.113 = 100.0;
             %tmp.114 = div %tmp.112 %tmp.113;
             %tmp.115 = mul %tmp.111 %tmp.114;

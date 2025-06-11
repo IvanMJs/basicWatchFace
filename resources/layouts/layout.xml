@@ -16,7 +16,7 @@
            color="Graphics.COLOR_WHITE" />
     
     <label id="TimeLabel"
-           x="47%"
+           x="50%"
            y="center"
            font="@Fonts.id_new_digital"
            justification="Graphics.TEXT_JUSTIFY_CENTER"
