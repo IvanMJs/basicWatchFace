@@ -1,0 +1,326 @@
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Weather,5,14,21]; ]
+import Toybox.Weather;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Time,6,13,17]; @symbol_usingdef<2> = [Gregorian,6,18,27]; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 8; @symbol_classdef = [basicWatchFaceView,8,6,24]; @symbol_extends<0> = [WatchUi,8,33,40]; @symbol_extends<1> = [WatchFace,8,41,50]; ]
+class basicWatchFaceView extends WatchUi.WatchFace {
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_10_26_12_4_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 11 8 ]
+        symbol [ WatchFace %tmp.2 11 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 11 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_10_26_12_4_stop:
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 14; @symbol_functiondef = [onLayout,14,13,21]; @symbol_param<0> = [dc,14,22,24]; @symbol_param<0>_type<0> = [Dc,14,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_14_40_16_4_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 15 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 15 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 15 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 15 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 15 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 15 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_14_40_16_4_stop:
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 19; @symbol_functiondef = [onShow,19,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 21; @symbol_functiondef = [onUpdate,21,13,21]; @symbol_param<0> = [dc,21,22,24]; @symbol_param<0>_type<0> = [Dc,21,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 24 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 24 12 21 ];
+        symbol [ System %tmp.1 24 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 24 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 24 12 21 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 27 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 27 12 22 ];
+        symbol [ Lang %tmp.4 27 25 29 ];
+        %tmp.4 = getm $.Toybox.Lang;
+        symbol [ format %tmp.5 27 30 36 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$:$2$";
+        %tmp.7 = newa 2;
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 29 14 23 ];
+        symbol [ hour %tmp.9 29 24 28 ];
+        %tmp.9 = getv %tmp.8 :hour;
+        symbol [ format %tmp.10 29 29 35 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = dup %tmp.7;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.15 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.15 29 45 54 ];
+        symbol [ min %tmp.16 29 55 58 ];
+        %tmp.16 = getv %tmp.15 :min;
+        symbol [ format %tmp.17 29 59 65 ];
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = dup %tmp.14;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.21);
+        lputv %timeString.2 %tmp.22;
+        symbol [ timeString %timeString.2 27 12 22 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 31 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %view.3 = local;
+        symbol [ view %view.3 31 12 16 ];
+        symbol [ View %tmp.24 31 19 23 ];
+        %tmp.24 = getv ? :View;
+        symbol [ findDrawableById %tmp.25 31 24 40 ];
+        %tmp.25 = getv function %tmp.24 :findDrawableById;
+        %tmp.26 = "TimeLabel";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        %tmp.28 = as %tmp.27 Text;
+        symbol [ Text %tmp.28 31 57 61 ];
+        lputv %view.3 %tmp.28;
+        symbol [ view %view.3 31 12 16 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 32 8 ]
+        %tmp.29 = lgetv %view.3;
+        symbol [ view %tmp.29 32 8 12 ];
+        symbol [ setText %tmp.30 32 13 20 ];
+        %tmp.30 = getv function %tmp.29 :setText;
+        %tmp.31 = lgetv %timeString.2;
+        symbol [ timeString %tmp.31 32 21 31 ];
+        invoke %tmp.29 %tmp.30(%tmp.31);
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 35 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %today.4 = local;
+        symbol [ today %today.4 35 12 17 ];
+        symbol [ Gregorian %tmp.32 35 20 29 ];
+        %tmp.32 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.33 35 30 34 ];
+        %tmp.33 = getv function %tmp.32 :info;
+        symbol [ Time %tmp.35 35 35 39 ];
+        %tmp.35 = getv ? :Time;
+        symbol [ now %tmp.36 35 40 43 ];
+        %tmp.36 = getv function %tmp.35 :now;
+        %tmp.37 = invoke %tmp.35 %tmp.36();
+        symbol [ Time %tmp.39 35 47 51 ];
+        %tmp.39 = getv ? :Time;
+        symbol [ FORMAT_MEDIUM %tmp.40 35 52 65 ];
+        %tmp.40 = getv %tmp.39 :FORMAT_MEDIUM;
+        %tmp.41 = invoke %tmp.32 %tmp.33(%tmp.37, %tmp.40);
+        lputv %today.4 %tmp.41;
+        symbol [ today %today.4 35 12 17 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 36 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %dateString.5 = local;
+        symbol [ dateString %dateString.5 36 12 22 ];
+        symbol [ Lang %tmp.42 36 25 29 ];
+        %tmp.42 = getm $.Toybox.Lang;
+        symbol [ format %tmp.43 36 30 36 ];
+        %tmp.43 = getv function %tmp.42 :format;
+        %tmp.44 = "$1$ $2$ $3$ $4$";
+        %tmp.45 = newa 4;
+        %tmp.46 = lgetv %today.4;
+        symbol [ today %tmp.46 39 16 21 ];
+        symbol [ day_of_week %tmp.47 39 22 33 ];
+        %tmp.47 = getv %tmp.46 :day_of_week;
+        %tmp.48 = dup %tmp.45;
+        %tmp.49 = aputv %tmp.48 0 %tmp.47;
+        %tmp.50 = lgetv %today.4;
+        symbol [ today %tmp.50 40 16 21 ];
+        symbol [ day %tmp.51 40 22 25 ];
+        %tmp.51 = getv %tmp.50 :day;
+        %tmp.52 = dup %tmp.49;
+        %tmp.53 = aputv %tmp.52 1 %tmp.51;
+        %tmp.54 = lgetv %today.4;
+        symbol [ today %tmp.54 41 16 21 ];
+        symbol [ month %tmp.55 41 22 27 ];
+        %tmp.55 = getv %tmp.54 :month;
+        %tmp.56 = dup %tmp.53;
+        %tmp.57 = aputv %tmp.56 2 %tmp.55;
+        %tmp.58 = lgetv %today.4;
+        symbol [ today %tmp.58 42 16 21 ];
+        symbol [ year %tmp.59 42 22 26 ];
+        %tmp.59 = getv %tmp.58 :year;
+        %tmp.60 = dup %tmp.57;
+        %tmp.61 = aputv %tmp.60 3 %tmp.59;
+        %tmp.62 = invoke %tmp.42 %tmp.43(%tmp.44, %tmp.61);
+        lputv %dateString.5 %tmp.62;
+        symbol [ dateString %dateString.5 36 12 22 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 46 8 ]
+        symbol [ View %tmp.64 46 15 19 ];
+        %tmp.64 = getv ? :View;
+        symbol [ findDrawableById %tmp.65 46 20 36 ];
+        %tmp.65 = getv function %tmp.64 :findDrawableById;
+        %tmp.66 = "DateLabel";
+        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
+        %tmp.68 = as %tmp.67 Text;
+        symbol [ Text %tmp.68 46 53 57 ];
+        lputv %view.3 %tmp.68;
+        symbol [ view %view.3 46 8 12 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 47 8 ]
+        %tmp.69 = lgetv %view.3;
+        symbol [ view %tmp.69 47 8 12 ];
+        symbol [ setText %tmp.70 47 13 20 ];
+        %tmp.70 = getv function %tmp.69 :setText;
+        %tmp.71 = lgetv %dateString.5;
+        symbol [ dateString %tmp.71 47 21 31 ];
+        invoke %tmp.69 %tmp.70(%tmp.71);
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 50 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %batteryLevel.6 = local;
+        symbol [ batteryLevel %batteryLevel.6 50 12 24 ];
+        symbol [ System %tmp.72 50 27 33 ];
+        %tmp.72 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.73 50 34 48 ];
+        %tmp.73 = getv function %tmp.72 :getSystemStats;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        symbol [ batteryInDays %tmp.75 50 51 64 ];
+        %tmp.75 = getv %tmp.74 :batteryInDays;
+        lputv %batteryLevel.6 %tmp.75;
+        symbol [ batteryLevel %batteryLevel.6 50 12 24 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 51 8 ]
+        [ "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_start" "C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop" ]
+        %batteryFormat.7 = local;
+        symbol [ batteryFormat %batteryFormat.7 51 12 25 ];
+        %tmp.76 = lgetv %batteryLevel.6;
+        symbol [ batteryLevel %tmp.76 51 28 40 ];
+        symbol [ format %tmp.77 51 41 47 ];
+        %tmp.77 = getv function %tmp.76 :format;
+        %tmp.78 = "%d";
+        %tmp.79 = invoke %tmp.76 %tmp.77(%tmp.78);
+        %tmp.80 = "d";
+        %tmp.81 = add %tmp.79 %tmp.80;
+        lputv %batteryFormat.7 %tmp.81;
+        symbol [ batteryFormat %batteryFormat.7 51 12 25 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 52 8 ]
+        symbol [ View %tmp.83 52 15 19 ];
+        %tmp.83 = getv ? :View;
+        symbol [ findDrawableById %tmp.84 52 20 36 ];
+        %tmp.84 = getv function %tmp.83 :findDrawableById;
+        %tmp.85 = "BatteryLabel";
+        %tmp.86 = invoke %tmp.83 %tmp.84(%tmp.85);
+        %tmp.87 = as %tmp.86 Text;
+        symbol [ Text %tmp.87 52 56 60 ];
+        lputv %view.3 %tmp.87;
+        symbol [ view %view.3 52 8 12 ];
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 53 8 ]
+        %tmp.88 = lgetv %view.3;
+        symbol [ view %tmp.88 53 8 12 ];
+        symbol [ setText %tmp.89 53 13 20 ];
+        %tmp.89 = getv function %tmp.88 :setText;
+        %tmp.90 = lgetv %batteryFormat.7;
+        symbol [ batteryFormat %tmp.90 53 21 34 ];
+        invoke %tmp.88 %tmp.89(%tmp.90);
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 56 8 ]
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_stmt:
+        %tmp.91 = lgetv %batteryLevel.6;
+        symbol [ batteryLevel %tmp.91 56 12 24 ];
+        %tmp.92 = 10;
+        %tmp.93 = lt %tmp.91 %tmp.92;
+        bf %tmp.93 @C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_false;
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_true:
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_31_58_8_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 57 8 ]
+        %tmp.94 = lgetv %view.3;
+        symbol [ view %tmp.94 57 8 12 ];
+        symbol [ setColor %tmp.95 57 13 21 ];
+        %tmp.95 = getv function %tmp.94 :setColor;
+        symbol [ Graphics %tmp.96 57 22 30 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.97 57 31 40 ];
+        %tmp.97 = getv %tmp.96 :COLOR_RED;
+        invoke %tmp.94 %tmp.95(%tmp.97);
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_31_58_8_stop:
+        goto @C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_end;
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_false:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 58 15 ]
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_stmt:
+        %tmp.98 = lgetv %batteryLevel.6;
+        symbol [ batteryLevel %tmp.98 58 19 31 ];
+        %tmp.99 = 15;
+        %tmp.100 = lt %tmp.98 %tmp.99;
+        bf %tmp.100 @C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_else_false;
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_true:
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_38_60_8_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 59 8 ]
+        %tmp.101 = lgetv %view.3;
+        symbol [ view %tmp.101 59 8 12 ];
+        symbol [ setColor %tmp.102 59 13 21 ];
+        %tmp.102 = getv function %tmp.101 :setColor;
+        symbol [ Graphics %tmp.103 59 22 30 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.104 59 31 43 ];
+        %tmp.104 = getv %tmp.103 :COLOR_YELLOW;
+        invoke %tmp.101 %tmp.102(%tmp.104);
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_38_60_8_stop:
+        goto @C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_end;
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_else_false:
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_60_15_62_8_start:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 61 8 ]
+        %tmp.105 = lgetv %view.3;
+        symbol [ view %tmp.105 61 8 12 ];
+        symbol [ setColor %tmp.106 61 13 21 ];
+        %tmp.106 = getv function %tmp.105 :setColor;
+        symbol [ Graphics %tmp.107 61 22 30 ];
+        %tmp.107 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.108 61 31 42 ];
+        %tmp.108 = getv %tmp.107 :COLOR_GREEN;
+        invoke %tmp.105 %tmp.106(%tmp.108);
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_60_15_62_8_stop:
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_58_15_62_8_if_end:
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_56_8_62_8_if_end:
+[ "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc" 83 8 ]
+        symbol [ View %tmp.110 83 8 12 ];
+        %tmp.110 = getv ? :View;
+        symbol [ onUpdate %tmp.111 83 13 21 ];
+        %tmp.111 = getv function %tmp.110 :onUpdate;
+        %tmp.112 = lgetv %dc;
+        symbol [ dc %tmp.112 83 22 24 ];
+        invoke %tmp.110 %tmp.111(%tmp.112);
+C_Users_ivanm_garmin_dev_basicWatchFace_source_basicWatchFaceView_mc_21_40_84_4_stop:
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 86; @symbol_functiondef = [onHide,86,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 88; @symbol_functiondef = [onExitSleep,88,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 90; @symbol_functiondef = [onEnterSleep,90,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "C:\Users\ivanm\garmin dev\basicWatchFace\source\basicWatchFaceView.mc"; @line = 1; ]
+<init> {
+}
