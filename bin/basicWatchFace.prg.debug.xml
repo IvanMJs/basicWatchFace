@@ -29,20 +29,26 @@
 <entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="58" parent="globals/basicWatchFaceView" pc="268435916" symbol="onUpdate"/>
 <entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="59" parent="globals/basicWatchFaceView" pc="268435924" symbol="onUpdate"/>
 <entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="61" parent="globals/basicWatchFaceView" pc="268435942" symbol="onUpdate"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="83" parent="globals/basicWatchFaceView" pc="268435956" symbol="onUpdate"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="12" lineNum="12" parent="globals/basicWatchFaceApp" pc="268435977" symbol="onStart"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="13" lineNum="20" parent="globals/basicWatchFaceApp" pc="268435980" symbol="getInitialView"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="13" lineNum="21" parent="globals/basicWatchFaceApp" pc="268435982" symbol="getInitialView"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="14" lineNum="7" parent="globals/basicWatchFaceApp" pc="268436012" symbol="initialize"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="14" lineNum="8" parent="globals/basicWatchFaceApp" pc="268436014" symbol="initialize"/>
-<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="15" lineNum="16" parent="globals/basicWatchFaceApp" pc="268436027" symbol="onStop"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="17" parent="globals/Rez/Layouts" pc="268436030" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436041" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="19" parent="globals/Rez/Layouts" pc="268436074" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="21" parent="globals/Rez/Layouts" pc="268436160" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="23" parent="globals/Rez/Layouts" pc="268436249" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="25" parent="globals/Rez/Layouts" pc="268436337" symbol="WatchFace"/>
-<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="27" parent="globals/Rez/Layouts" pc="268436423" symbol="WatchFace"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="68" parent="globals/basicWatchFaceView" pc="268435956" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="69" parent="globals/basicWatchFaceView" pc="268435968" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="70" parent="globals/basicWatchFaceView" pc="268435992" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="75" parent="globals/basicWatchFaceView" pc="268436027" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceView.mc" id="11" lineNum="107" parent="globals/basicWatchFaceView" pc="268436052" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="12" lineNum="12" parent="globals/basicWatchFaceApp" pc="268436073" symbol="onStart"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="13" lineNum="20" parent="globals/basicWatchFaceApp" pc="268436076" symbol="getInitialView"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="13" lineNum="21" parent="globals/basicWatchFaceApp" pc="268436078" symbol="getInitialView"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="14" lineNum="7" parent="globals/basicWatchFaceApp" pc="268436108" symbol="initialize"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="14" lineNum="8" parent="globals/basicWatchFaceApp" pc="268436110" symbol="initialize"/>
+<entry filename="C:\\Users\\ivanm\\garmin dev\\basicWatchFace\\source\\basicWatchFaceApp.mc" id="15" lineNum="16" parent="globals/basicWatchFaceApp" pc="268436123" symbol="onStop"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="17" parent="globals/Rez/Layouts" pc="268436126" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436137" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="19" parent="globals/Rez/Layouts" pc="268436170" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="21" parent="globals/Rez/Layouts" pc="268436256" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="23" parent="globals/Rez/Layouts" pc="268436342" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="25" parent="globals/Rez/Layouts" pc="268436428" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="27" parent="globals/Rez/Layouts" pc="268436517" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="29" parent="globals/Rez/Layouts" pc="268436605" symbol="WatchFace"/>
+<entry filename="c:\\Users\\ivanm\\garmin dev\\basicWatchFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="31" parent="globals/Rez/Layouts" pc="268436691" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -92,20 +98,23 @@
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435560" name="dc" stackId="1" startPc="268435525"/>
-<entry arg="true" endPc="268435976" name="dc" stackId="1" startPc="268435576"/>
-<entry endPc="268435975" name="clockTime" stackId="2" startPc="268435579"/>
-<entry endPc="268435975" name="timeString" stackId="3" startPc="268435579"/>
-<entry endPc="268435975" name="view" stackId="4" startPc="268435579"/>
-<entry endPc="268435975" name="today" stackId="5" startPc="268435579"/>
-<entry endPc="268435975" name="dateString" stackId="6" startPc="268435579"/>
-<entry endPc="268435975" name="batteryLevel" stackId="7" startPc="268435579"/>
-<entry endPc="268435975" name="batteryFormat" stackId="8" startPc="268435579"/>
-<entry arg="true" endPc="268436447" name="dc" stackId="1" startPc="268436030"/>
-<entry endPc="268436447" name="local_Rez_Fonts_id_new_digital" stackId="2" startPc="268436041"/>
-<entry endPc="268436447" name="rez_cmp_local_text_WeatherLabel" stackId="3" startPc="268436041"/>
-<entry endPc="268436447" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268436041"/>
-<entry endPc="268436447" name="rez_cmp_local_text_TimeLabel" stackId="5" startPc="268436041"/>
-<entry endPc="268436447" name="rez_cmp_local_text_BatteryLabel" stackId="6" startPc="268436041"/>
+<entry arg="true" endPc="268436072" name="dc" stackId="1" startPc="268435576"/>
+<entry endPc="268436071" name="clockTime" stackId="2" startPc="268435579"/>
+<entry endPc="268436071" name="timeString" stackId="3" startPc="268435579"/>
+<entry endPc="268436071" name="view" stackId="4" startPc="268435579"/>
+<entry endPc="268436071" name="today" stackId="5" startPc="268435579"/>
+<entry endPc="268436071" name="dateString" stackId="6" startPc="268435579"/>
+<entry endPc="268436071" name="batteryLevel" stackId="7" startPc="268435579"/>
+<entry endPc="268436071" name="batteryFormat" stackId="8" startPc="268435579"/>
+<entry endPc="268436071" name="weather" stackId="9" startPc="268435579"/>
+<entry arg="true" endPc="268436725" name="dc" stackId="1" startPc="268436126"/>
+<entry endPc="268436725" name="local_Rez_Fonts_id_new_digital" stackId="2" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_ConditionLabel" stackId="3" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_WeatherIcon" stackId="4" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_WeatherLabel" stackId="5" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_DateLabel" stackId="6" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_TimeLabel" stackId="7" startPc="268436137"/>
+<entry endPc="268436725" name="rez_cmp_local_text_BatteryLabel" stackId="8" startPc="268436137"/>
 </localVars>
 <deviceInfo deviceVersion="90325a5ba4f163ec5ad32845d0e0beee034c6cee" partNumber="006-B3907-00"/>
 <annotations>
@@ -155,7 +164,7 @@
 <functionEntry accessMode="public" name="onHide" parent="basicWatchFaceView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435976" name="onUpdate" parent="basicWatchFaceView" startPc="268435576">
+<functionEntry accessMode="public" endPc="268436072" name="onUpdate" parent="basicWatchFaceView" startPc="268435576">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
@@ -171,21 +180,21 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435979" name="onStart" parent="basicWatchFaceApp" startPc="268435977">
+<functionEntry accessMode="public" endPc="268436075" name="onStart" parent="basicWatchFaceApp" startPc="268436073">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436011" name="getInitialView" parent="basicWatchFaceApp" startPc="268435980">
+<functionEntry accessMode="public" endPc="268436107" name="getInitialView" parent="basicWatchFaceApp" startPc="268436076">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436026" name="initialize" parent="basicWatchFaceApp" startPc="268436012">
+<functionEntry accessMode="public" endPc="268436122" name="initialize" parent="basicWatchFaceApp" startPc="268436108">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436029" name="onStop" parent="basicWatchFaceApp" startPc="268436027">
+<functionEntry accessMode="public" endPc="268436125" name="onStop" parent="basicWatchFaceApp" startPc="268436123">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436447" name="WatchFace" parent="Layouts" startPc="268436030">
+<functionEntry accessMode="public" endPc="268436725" name="WatchFace" parent="Layouts" startPc="268436126">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

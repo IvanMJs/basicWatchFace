@@ -64,20 +64,44 @@ class basicWatchFaceView extends WatchUi.WatchFace {
 
 
 
-        // Crear el clima
-        // var weather = Weather.getCurrentConditions();
-        // var condition = weather.condition;
-           
-        // Texto del clima
-        // view = View.findDrawableById("WeatherLabel") as Text;
-        // view.setText(condition.toString());
+        // Temperatura
+        var weather = Weather.getCurrentConditions();
+        view = View.findDrawableById("WeatherLabel") as Text;
+        view.setText(weather.temperature.format("%d") + "°C");
         
-        
+        // Condición del clima con icono
+        //var conditionText = "";
+        // Selecciona el ResourceId del icono según la condición del clima
+       System.print("Weather condition: " + weather.condition);
+
+    // Dibujar icono directamente según condición
+       
+
+   
+      
         
 
-
         
         
+        
+       
+        
+       
+        // if(Weather.CONDITION_CLEAR) {
+        //     view.setColor(Graphics.COLOR_YELLOW);
+        // } else if(Weather.CONDITION_CLOUDY) {
+        //     view.setColor(Graphics.COLOR_LT_GRAY);
+        //     conditionText = "Nublado";
+        // } else if(Weather.CONDITION_RAIN) {
+        //     view.setColor(Graphics.COLOR_BLUE);
+        // } else if(Weather.CONDITION_SNOW) {
+        //     view.setColor(Graphics.COLOR_WHITE);
+        // } else if(Weather.CONDITION_RAIN) {
+        //     view.setColor(Graphics.COLOR_RED);
+        // } else {
+        //     view.setColor(Graphics.COLOR_BLACK);
+        // }
+        //  view.setText(conditionText);
 
         // Refrescar layout
         View.onUpdate(dc);

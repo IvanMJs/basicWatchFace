@@ -16,6 +16,10 @@ module Rez {
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var local_Rez_Fonts_id_new_digital = (WatchUi.loadResource($.Rez.Fonts.id_new_digital) as Graphics.FontReference);
+            var rez_cmp_local_text_ConditionLabel = new WatchUi.Text({:identifier=>"ConditionLabel", :color=>Graphics.COLOR_WHITE, :locX=>(280 * 0.5), :locY=>30, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            var rez_cmp_local_text_WeatherIcon = new WatchUi.Text({:identifier=>"WeatherIcon", :color=>Graphics.COLOR_WHITE, :locX=>(280 * 0.5), :locY=>60, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
             var rez_cmp_local_text_WeatherLabel = new WatchUi.Text({:identifier=>"WeatherLabel", :color=>Graphics.COLOR_WHITE, :locX=>(280 * 0.5), :locY=>60, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
             var rez_cmp_local_text_DateLabel = new WatchUi.Text({:identifier=>"DateLabel", :color=>Graphics.COLOR_WHITE, :locX=>(280 * 0.5), :locY=>(280 * (30 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
@@ -24,7 +28,7 @@ module Rez {
 
             var rez_cmp_local_text_BatteryLabel = new WatchUi.Text({:identifier=>"BatteryLabel", :color=>Graphics.COLOR_BLUE, :locX=>(280 * 0.5), :locY=>250, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
 
-            return [rez_cmp_local_text_WeatherLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_TimeLabel, rez_cmp_local_text_BatteryLabel] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_ConditionLabel, rez_cmp_local_text_WeatherIcon, rez_cmp_local_text_WeatherLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_TimeLabel, rez_cmp_local_text_BatteryLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
